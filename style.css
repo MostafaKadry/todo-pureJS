@@ -1,0 +1,120 @@
+*{box-sizing: border-box;}
+body{font-family: poppins;}
+.todo-container{
+    width: 90%;
+    margin: 30px auto 0;
+    background-color: #F6F6F6;
+}
+.todo-container .add-task{
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+.todo-container .add-task input{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.28);
+    width: calc(100% - 15px);
+    color: #FFF;
+    font-size:  40px;
+}
+.todo-container .add-task input:focus{
+    outline: none;
+}
+.todo-container .add-task .plus{
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    background-color: aliceblue;
+    right: 12px;
+    border-radius: 50%;
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 40px;
+    transition: transform .3s;
+}
+.todo-container .add-task .plus:hover{
+    transform: rotate(90deg);
+}
+.todo-container .tasks-content{
+    padding: 15px;
+    overflow: hidden;
+    font-size: 51px;
+}
+.todo-container .tasks-content .no-tasks-message{
+    font-size: 51px;
+    color: #777;
+}
+.todo-container .tasks-content > span{
+    display: block;
+    background-color: #FFF;
+    padding: 10px;
+    
+}
+.todo-container .tasks-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+.todo-container .tasks-content .task-box .delete{
+    float: right;  
+    background-color: firebrick;
+    color: floralwhite;
+    padding: 4px 10px;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 4.5px;
+    cursor: pointer;
+}
+.finished{
+    text-decoration: line-through;
+}
+
+.task-stats {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 90%;
+    font-size: 50px;
+}
+.task-stats .tasks-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.task-stats .tasks-completed{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+
+.task-stats .tasks-count span,
+.task-stats .tasks-completed span{
+    color: #FFF;
+    padding: 3px;
+    font-size: 30px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.task-stats .tasks-count span{background-color: #E91E63;}
+.task-stats .tasks-completed span{background-color: #03A9F4;}
+
+.temporary{
+    color: orangered;
+    text-align: center;
+     
+}
+.delete-all-tasks{width:90%; margin: auto; overflow: hidden; text-align: center;}
+.delete-all-tasks-Btn{
+    background-color: firebrick;
+    color: #FFF;
+    border-radius:4px;
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+    font-size: 47px;
+}
+
+
+
+
